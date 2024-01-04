@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'bottom_bar/bottom_bar.dart';
 
 void main() {
-  // ignore: prefer_const_constructors
   runApp(MyApp());
 }
 
