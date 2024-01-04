@@ -88,7 +88,7 @@ class _Account_pageState extends State<Account_page> {
                       GestureDetector(
                           onTap: () {
                             Navigator.of(context).push(MaterialPageRoute(
-                                builder: (context) => Account()));
+                                builder: (context) => const Account()));
                           },
                           child: boxcontainer(text: 'Your Account')),
                       boxcontainer(text: 'Your Wish List'),
