@@ -7,8 +7,6 @@ class Shopping extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.pink
-    );
+    return Scaffold(backgroundColor: Colors.pink);
   }
 }
