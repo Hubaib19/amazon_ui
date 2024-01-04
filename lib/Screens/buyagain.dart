@@ -41,8 +41,8 @@ class _BuyAgainPageState extends State<BuyAgainPage> {
                   height: 10,
                 ),
                 TextFormField(
-                  decoration: InputDecoration(
-                    prefixIcon: const Padding(
+                  decoration: const InputDecoration(
+                    prefixIcon: Padding(
                       padding: EdgeInsets.only(
                         left: 6,
                       ),
@@ -52,8 +52,8 @@ class _BuyAgainPageState extends State<BuyAgainPage> {
                         size: 23,
                       ),
                     ),
-                    contentPadding: const EdgeInsets.only(top: 10),
-                    border: const OutlineInputBorder(
+                    contentPadding: EdgeInsets.only(top: 10),
+                    border: OutlineInputBorder(
                       borderRadius: BorderRadius.all(
                         Radius.circular(7),
                       ),
@@ -65,7 +65,7 @@ class _BuyAgainPageState extends State<BuyAgainPage> {
                     hintText: 'Search',
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Stack(children: [
@@ -109,7 +109,7 @@ class _BuyAgainPageState extends State<BuyAgainPage> {
                                                           BorderRadius.circular(
                                                               50),
                                                     ),
-                                                    child: Column(
+                                                    child: const Column(
                                                       mainAxisAlignment:
                                                           MainAxisAlignment
                                                               .center,
@@ -126,7 +126,7 @@ class _BuyAgainPageState extends State<BuyAgainPage> {
                                                   child: Image.asset(
                                                       'asset/Buy1.png'),
                                                 ),
-                                                SizedBox(
+                                                const SizedBox(
                                                   height: 2,
                                                 ),
                                                 Padding(
@@ -138,10 +138,10 @@ class _BuyAgainPageState extends State<BuyAgainPage> {
                                                         CrossAxisAlignment
                                                             .start,
                                                     children: [
-                                                      Text(
+                                                      const Text(
                                                           'The Psychology Of Money'),
-                                                      Text('by Morgan Housel'),
-                                                      SizedBox(
+                                                      const Text('by Morgan Housel'),
+                                                      const SizedBox(
                                                         height: 2,
                                                       ),
                                                       Padding(
@@ -191,7 +191,7 @@ class _BuyAgainPageState extends State<BuyAgainPage> {
                                                           ],
                                                         ),
                                                       ),
-                                                      SizedBox(
+                                                      const SizedBox(
                                                         height: 2,
                                                       ),
                                                       Row(
@@ -206,7 +206,7 @@ class _BuyAgainPageState extends State<BuyAgainPage> {
                                                                     FontWeight
                                                                         .bold),
                                                           ),
-                                                          Text(
+                                                          const Text(
                                                             '₹283',
                                                             style: TextStyle(
                                                                 fontSize: 18,
@@ -241,7 +241,7 @@ class _BuyAgainPageState extends State<BuyAgainPage> {
                                                             color: Colors
                                                                 .grey[500]),
                                                       ),
-                                                      SizedBox(
+                                                      const SizedBox(
                                                         height: 10,
                                                       ),
                                                       Padding(
@@ -295,7 +295,7 @@ class _BuyAgainPageState extends State<BuyAgainPage> {
                                                 )
                                               ],
                                             )),
-                                        SizedBox(
+                                        const SizedBox(
                                           width: 10,
                                         ),
                                         Container(
