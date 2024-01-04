@@ -250,7 +250,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       height: 70,
                     ),
                      Text(text!,
-                        style: TextStyle(fontWeight: FontWeight.w500))
+                        style: const TextStyle(fontWeight: FontWeight.w500))
                       ],
                     );
   }
