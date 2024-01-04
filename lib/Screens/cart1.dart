@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, sort_child_properties_last
+
 import 'package:flutter/material.dart';
 
 class cartPage extends StatefulWidget {
@@ -143,7 +145,7 @@ class _cartPageState extends State<cartPage> {
                 const SizedBox(
                   height: 15,
                 ),
-                Divider(
+               const Divider(
                   thickness: 2,
                 ),
                 const SizedBox(
@@ -161,7 +163,7 @@ class _cartPageState extends State<cartPage> {
                     text8: 'In stock',
                     text9: '10 days REplacement. Buy with',
                     text10: 'other items in cart'),
-                SizedBox(
+              const  SizedBox(
                   height: 15,
                 ),
                 cart(
@@ -203,7 +205,7 @@ class _cartPageState extends State<cartPage> {
           width: 400,
           color: Colors.grey[200],
           child: Padding(
-            padding: EdgeInsets.only(right: 220, bottom: 140),
+            padding:const EdgeInsets.only(right: 220, bottom: 140),
             child: (Image.asset(
               imagepath,
               height: 39,
@@ -212,7 +214,7 @@ class _cartPageState extends State<cartPage> {
           ),
         ),
         Padding(
-          padding: EdgeInsets.only(left: 180, top: 15),
+          padding:const EdgeInsets.only(left: 180, top: 15),
           child: Column(
             children: [
               Row(
@@ -222,33 +224,33 @@ class _cartPageState extends State<cartPage> {
                     children: [
                       Text(
                         text1!,
-                        style: TextStyle(fontSize: 16),
+                        style: const TextStyle(fontSize: 16),
                       ),
                       Text(
                         text2!,
-                        style: TextStyle(fontSize: 16),
+                        style: const TextStyle(fontSize: 16),
                       ),
                       Text(
                         text3!,
-                        style: TextStyle(fontSize: 16),
+                        style: const TextStyle(fontSize: 16),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 4,
                       ),
                       Text(
                         text4!,
-                        style: TextStyle(fontWeight: FontWeight.bold),
+                        style: const TextStyle(fontWeight: FontWeight.bold),
                       ),
-                      SizedBox(height: 4),
+                      const SizedBox(height: 4),
                       Row(
                         children: [
                           Text(
                             text5!,
-                            style: TextStyle(fontWeight: FontWeight.bold),
+                            style: const TextStyle(fontWeight: FontWeight.bold),
                           ),
                           Text(
                             text6!,
-                            style: TextStyle(
+                            style: const TextStyle(
                                 decoration: TextDecoration.lineThrough),
                           )
                         ],
@@ -283,7 +285,7 @@ class _cartPageState extends State<cartPage> {
             ],
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 20,
         ),
         Positioned(
@@ -311,7 +313,7 @@ class _cartPageState extends State<cartPage> {
                         color: Colors.black,
                       ),
                       style: ElevatedButton.styleFrom(
-                        primary: Color.fromARGB(255, 207, 205, 205),
+                        backgroundColor: Color.fromARGB(255, 207, 205, 205),
                         minimumSize: Size(40, 40),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(5.0),
@@ -326,7 +328,7 @@ class _cartPageState extends State<cartPage> {
                         color: Colors.black,
                       ),
                       style: ElevatedButton.styleFrom(
-                        primary: Color.fromARGB(255, 207, 205, 205),
+                        backgroundColor: Color.fromARGB(255, 207, 205, 205),
                         minimumSize: Size(40, 40),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(5.0),
