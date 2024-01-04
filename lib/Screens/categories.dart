@@ -13,7 +13,7 @@ class _Categories_pageState extends State<Categories_page> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(230, 104, 222, 211),
+      backgroundColor: const Color.fromARGB(230, 104, 222, 211),
 
         body: SafeArea(
           child: SingleChildScrollView(
