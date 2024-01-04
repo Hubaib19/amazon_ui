@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class buyAgainPage extends StatefulWidget {
-  const buyAgainPage({super.key});
+class BuyAgainPage extends StatefulWidget {
+  const BuyAgainPage({super.key});
 
   @override
-  State<buyAgainPage> createState() => _buyAgainPageState();
+  State<BuyAgainPage> createState() => _BuyAgainPageState();
 }
 
-class _buyAgainPageState extends State<buyAgainPage> {
+class _BuyAgainPageState extends State<BuyAgainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,24 +20,24 @@ class _buyAgainPageState extends State<buyAgainPage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
+                    const Text(
                       'Buy Again',
                       style:
                           TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
                     ),
                     ElevatedButton.icon(
-                        style: ButtonStyle(
+                        style: const ButtonStyle(
                             backgroundColor:
                                 MaterialStatePropertyAll(Colors.white)),
                         onPressed: () {},
-                        icon: Icon(Icons.arrow_drop_down, color: Colors.black),
-                        label: Text(
+                        icon: const Icon(Icons.arrow_drop_down, color: Colors.black),
+                        label: const Text(
                           'Filter',
                           style: TextStyle(color: Colors.black),
                         )),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 TextFormField(
