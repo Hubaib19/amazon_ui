@@ -13,7 +13,7 @@ import 'package:google_nav_bar/google_nav_bar.dart';
 class Bottom extends StatefulWidget { 
 
   
-    Bottom({Key? key}) : super(key:key);
+    const Bottom({Key? key}) : super(key:key);
 
   @override
   State<Bottom> createState() => _BottomState();
