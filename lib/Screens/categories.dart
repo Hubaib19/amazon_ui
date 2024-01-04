@@ -13,8 +13,7 @@ class _Categories_pageState extends State<Categories_page> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(230, 104, 222, 211),
-
+        backgroundColor: const Color.fromARGB(230, 104, 222, 211),
         body: SafeArea(
           child: SingleChildScrollView(
             child: Column(
@@ -22,40 +21,40 @@ class _Categories_pageState extends State<Categories_page> {
                 Padding(
                   padding: const EdgeInsets.all(20.0),
                   child: TextFormField(
-                            decoration: InputDecoration(
-                              prefixIcon: const Padding(
-                                padding: EdgeInsets.only(
-                                  left: 6,
-                                ),
-                                child: Icon(
-                                  Icons.search,
-                                  color: Colors.black38,
-                                  size: 23,
-                                ),
-                              ),
-                              suffixIcon: Icon(
-                                Icons.center_focus_strong_outlined,
-                                color: Colors.grey[20],
-                              ),
-                              filled: true,
-                              fillColor: Colors.white,
-                              contentPadding: const EdgeInsets.only(top: 10),
-                              border: const OutlineInputBorder(
-                                borderRadius: BorderRadius.all(
-                                  Radius.circular(7),
-                                ),
-                                borderSide: BorderSide(
-                                  color: Colors.black38,
-                                  width: 1,
-                                ),
-                              ),
-                              hintText: 'Search Amazon.in',
-                              hintStyle: const TextStyle(
-                                fontWeight: FontWeight.w500,
-                                fontSize: 17,
-                              ),
-                            ),
-                          ),
+                    decoration: InputDecoration(
+                      prefixIcon: const Padding(
+                        padding: EdgeInsets.only(
+                          left: 6,
+                        ),
+                        child: Icon(
+                          Icons.search,
+                          color: Colors.black38,
+                          size: 23,
+                        ),
+                      ),
+                      suffixIcon: Icon(
+                        Icons.center_focus_strong_outlined,
+                        color: Colors.grey[20],
+                      ),
+                      filled: true,
+                      fillColor: Colors.white,
+                      contentPadding: const EdgeInsets.only(top: 10),
+                      border: const OutlineInputBorder(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(7),
+                        ),
+                        borderSide: BorderSide(
+                          color: Colors.black38,
+                          width: 1,
+                        ),
+                      ),
+                      hintText: 'Search Amazon.in',
+                      hintStyle: const TextStyle(
+                        fontWeight: FontWeight.w500,
+                        fontSize: 17,
+                      ),
+                    ),
+                  ),
                 ),
                 Container(
                   decoration: const BoxDecoration(
@@ -88,7 +87,8 @@ class _Categories_pageState extends State<Categories_page> {
                                       left: 15,
                                       child: Container(
                                         decoration: BoxDecoration(
-                                          borderRadius: BorderRadius.circular(10),
+                                          borderRadius:
+                                              BorderRadius.circular(10),
                                           gradient: const LinearGradient(
                                             begin: Alignment.topCenter,
                                             end: Alignment.bottomCenter,
@@ -121,7 +121,8 @@ class _Categories_pageState extends State<Categories_page> {
                                         height: 50,
                                         width: 150,
                                         decoration: BoxDecoration(
-                                          borderRadius: BorderRadius.circular(10),
+                                          borderRadius:
+                                              BorderRadius.circular(10),
                                           gradient: const LinearGradient(
                                             begin: Alignment.topCenter,
                                             end: Alignment.bottomCenter,
@@ -150,10 +151,12 @@ class _Categories_pageState extends State<Categories_page> {
                                 height: 20,
                               ),
                               Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
                                   children: [
                                     categories(
-                                        imagepath: 'asset/cate1.png', text: 'Prime'),
+                                        imagepath: 'asset/cate1.png',
+                                        text: 'Prime'),
                                     categories(
                                         imagepath: 'asset/cate2.png',
                                         text: 'Deals and savings'),
@@ -162,7 +165,8 @@ class _Categories_pageState extends State<Categories_page> {
                                 height: 15,
                               ),
                               Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
                                 children: [
                                   categories(
                                       imagepath: 'asset/cate3.png',
@@ -176,7 +180,8 @@ class _Categories_pageState extends State<Categories_page> {
                                 height: 15,
                               ),
                               Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
                                 children: [
                                   categories(
                                       imagepath: 'asset/cate5.png',
@@ -188,7 +193,8 @@ class _Categories_pageState extends State<Categories_page> {
                               ),
                               const SizedBox(height: 15),
                               Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
                                 children: [
                                   categories(
                                       imagepath: 'asset/cate7.png',
@@ -200,14 +206,12 @@ class _Categories_pageState extends State<Categories_page> {
                               )
                             ],
                           ))
-                          
                     ],
                   ),
                 ),
               ],
             ),
           ),
-          
         ));
   }
 
