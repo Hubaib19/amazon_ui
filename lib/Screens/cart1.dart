@@ -13,178 +13,170 @@ class _cartPageState extends State<cartPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body:  SingleChildScrollView(
-               child:
-                  Column(mainAxisAlignment: MainAxisAlignment.start, children: [
-                Container(
-                  height: 50,
-                  width: double.infinity,
-                  decoration: const BoxDecoration(
-                    gradient: LinearGradient(
-                      colors: [
-                        Color.fromARGB(255, 114, 226, 221),
-                        Color.fromARGB(255, 162, 236, 233),
-                      ],
+        body: SingleChildScrollView(
+      child: Column(mainAxisAlignment: MainAxisAlignment.start, children: [
+        Container(
+          height: 50,
+          width: double.infinity,
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              colors: [
+                Color.fromARGB(255, 114, 226, 221),
+                Color.fromARGB(255, 162, 236, 233),
+              ],
+            ),
+          ),
+          padding: const EdgeInsets.only(left: 10),
+          child: const Row(
+            children: [
+              Icon(
+                Icons.location_on_outlined,
+                size: 20,
+              ),
+              Expanded(
+                child: Padding(
+                  padding: EdgeInsets.only(left: 5),
+                  child: Text(
+                    'Delivery to dsooza - kuthiravattam 676503',
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.w700,
                     ),
                   ),
-                  padding: const EdgeInsets.only(left: 10),
-                  child: const Row(
-                    children: [
-                      Icon(
-                        Icons.location_on_outlined,
-                        size: 20,
-                      ),
-                      Expanded(
-                        child: Padding(
-                          padding: EdgeInsets.only(left: 5),
-                          child: Text(
-                            'Delivery to dsooza - kuthiravattam 676503',
-                            style: TextStyle(
-                              fontSize: 18,
-                              fontWeight: FontWeight.w700,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
                 ),
-                
-                const Row(
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.only(left: 12, top: 15),
-                      child: Text(
-                        " Subtotal  ",
-                        style: TextStyle(fontSize: 22),
-                      ),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.only(top: 15),
-                      child: Text(
-                        "₹219",
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 26),
-                      ),
-                    ),
-                  ],
+              ),
+            ],
+          ),
+        ),
+        const Row(
+          children: [
+            Padding(
+              padding: EdgeInsets.only(left: 12, top: 15),
+              child: Text(
+                " Subtotal  ",
+                style: TextStyle(fontSize: 22),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(top: 15),
+              child: Text(
+                "₹219",
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 26),
+              ),
+            ),
+          ],
+        ),
+        Row(
+          children: [
+            const SizedBox(width: 2),
+            const Padding(
+              padding: EdgeInsets.only(left: 12),
+              child: Icon(
+                Icons.check_circle,
+                color: Colors.green,
+              ),
+            ),
+            Text(
+              "Your order is eligible for FREE Delivery.",
+              style: TextStyle(color: Colors.green[600], fontSize: 17),
+            ),
+          ],
+        ),
+        const Row(
+          children: [
+            Padding(
+              padding: EdgeInsets.only(left: 35, bottom: 18),
+              child: Text("  Select this option at checkout."),
+            ),
+            Padding(
+              padding: EdgeInsets.only(bottom: 18),
+              child: Text(
+                " Details",
+                style: TextStyle(color: Colors.blue),
+              ),
+            )
+          ],
+        ),
+        Container(
+          width: 360,
+          height: 40,
+          decoration: BoxDecoration(
+            borderRadius: const BorderRadius.all(
+              Radius.circular(10),
+            ),
+            border: Border.all(color: Colors.black12),
+            color: Colors.yellow[600],
+          ),
+          child: const Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Center(
+                child: Text(
+                  "proceed to Buy (1 item)",
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
                 ),
-                Row(
-                  children: [
-                    const SizedBox(width: 2),
-                    const Padding(
-                      padding: EdgeInsets.only(left: 12),
-                      child: Icon(
-                        Icons.check_circle,
-                        color: Colors.green,
-                      ),
-                    ),
-                    Text(
-                      "Your order is eligible for FREE Delivery.",
-                      style:
-                          TextStyle(color: Colors.green[600], fontSize: 17),
-                    ),
-                  ],
-                ),
-                const Row(
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.only(left: 35, bottom: 18),
-                      child: Text("  Select this option at checkout."),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.only(bottom: 18),
-                      child: Text(
-                        " Details",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                    )
-                  ],
-                ),
-                Container(
-                  width: 360,
-                  height: 40,
-                  decoration: BoxDecoration(
-                    borderRadius: const BorderRadius.all(
-                      Radius.circular(10),
-                    ),
-                    border: Border.all(color: Colors.black12),
-                    color: Colors.yellow[600],
-                  ),
-                  child: const Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Center(
-                        child: Text(
-                          "proceed to Buy (1 item)",
-                          style: TextStyle(
-                              fontSize: 18, fontWeight: FontWeight.w500),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                const SizedBox(
-                  height: 30,
-                ),
-                Row(
-                  children: [
-                    IconButton(
-                      onPressed: () {},
-                      icon: const Icon(
-                        Icons.crop_square,
-                        color: Colors.black,
-                      ),
-                    ),
-                    const Text(
-                      "Send as a gift. Include custom message",
-                      style: TextStyle(fontSize: 18),
-                    ),
-                  ],
-                ),
-                const SizedBox(
-                  height: 15,
-                ),
-               const Divider(
-                  thickness: 2,
-                ),
-                const SizedBox(
-                  height: 15,
-                ),
-                cart(
-                    imagepath: 'asset/book5.jpg',
-                    text1: 'The Monk Who Sold his',
-                    text2: 'Ferrai',
-                    text3: 'by Robin Sharma',
-                    text4: 'paperback',
-                    text5: '₹219 ',
-                    text6: 'M.R.P.:₹299',
-                    text7: 'Eligible for FREE shipping',
-                    text8: 'In stock',
-                    text9: '10 days REplacement. Buy with',
-                    text10: 'other items in cart'),
-              const  SizedBox(
-                  height: 15,
-                ),
-                cart(
-                    imagepath: 'asset/paulo1.jpg',
-                    text1: 'The Winner Stands ',
-                    text2: 'Alone',
-                    text3: 'by Robin Sharma',
-                    text4: 'paperback',
-                    text5: '₹241 ',
-                    text6: 'M.R.P.:₹322',
-                    text7: 'Eligible for FREE shipping',
-                    text8: 'In stock',
-                    text9: 'Buy more Save more,Get upto',
-                    text10: '₹60 cashback >'),
-                    
-               
-              ]),
-          )
-            );
-       
+              ),
+            ],
+          ),
+        ),
+        const SizedBox(
+          height: 30,
+        ),
+        Row(
+          children: [
+            IconButton(
+              onPressed: () {},
+              icon: const Icon(
+                Icons.crop_square,
+                color: Colors.black,
+              ),
+            ),
+            const Text(
+              "Send as a gift. Include custom message",
+              style: TextStyle(fontSize: 18),
+            ),
+          ],
+        ),
+        const SizedBox(
+          height: 15,
+        ),
+        const Divider(
+          thickness: 2,
+        ),
+        const SizedBox(
+          height: 15,
+        ),
+        cart(
+            imagepath: 'asset/book5.jpg',
+            text1: 'The Monk Who Sold his',
+            text2: 'Ferrai',
+            text3: 'by Robin Sharma',
+            text4: 'paperback',
+            text5: '₹219 ',
+            text6: 'M.R.P.:₹299',
+            text7: 'Eligible for FREE shipping',
+            text8: 'In stock',
+            text9: '10 days REplacement. Buy with',
+            text10: 'other items in cart'),
+        const SizedBox(
+          height: 15,
+        ),
+        cart(
+            imagepath: 'asset/paulo1.jpg',
+            text1: 'The Winner Stands ',
+            text2: 'Alone',
+            text3: 'by Robin Sharma',
+            text4: 'paperback',
+            text5: '₹241 ',
+            text6: 'M.R.P.:₹322',
+            text7: 'Eligible for FREE shipping',
+            text8: 'In stock',
+            text9: 'Buy more Save more,Get upto',
+            text10: '₹60 cashback >'),
+      ]),
+    ));
   }
+
   Stack cart({
     required String imagepath,
     String? text1,
@@ -205,7 +197,7 @@ class _cartPageState extends State<cartPage> {
           width: 400,
           color: Colors.grey[200],
           child: Padding(
-            padding:const EdgeInsets.only(right: 220, bottom: 140),
+            padding: const EdgeInsets.only(right: 220, bottom: 140),
             child: (Image.asset(
               imagepath,
               height: 39,
@@ -214,7 +206,7 @@ class _cartPageState extends State<cartPage> {
           ),
         ),
         Padding(
-          padding:const EdgeInsets.only(left: 180, top: 15),
+          padding: const EdgeInsets.only(left: 180, top: 15),
           child: Column(
             children: [
               Row(
@@ -267,8 +259,8 @@ class _cartPageState extends State<cartPage> {
                       SizedBox(height: 10),
                       Text(
                         text8!,
-                        style: TextStyle(
-                            color: Color.fromARGB(255, 68, 177, 72)),
+                        style:
+                            TextStyle(color: Color.fromARGB(255, 68, 177, 72)),
                       ),
                       SizedBox(
                         height: 10,
