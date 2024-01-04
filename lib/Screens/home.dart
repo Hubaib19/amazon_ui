@@ -87,17 +87,18 @@ class _HomeScreenState extends State<HomeScreen> {
                   padding: const EdgeInsets.all(8.0),
                   child: Row(
                     children: [
-                      menu1(imagePath: 'asset/amazonfresh1.png',text: 'Fresh'),
-                      menu1(imagePath: 'asset/Mobiles1.png',text: 'Mobiles'),
-                      menu1(imagePath: 'asset/Fashion1.png',text: 'Fashion'),
-                      menu1(imagePath: 'asset/Beauty1.png',text: 'Beauty'),
-                      menu1(imagePath: 'asset/Home1.png',text: 'Home'),
-                      menu1(imagePath: 'asset/Eletronics1.png',text: 'Electronics'),
-                      menu1(imagePath: 'asset/Deals1.png',text: 'Deals'),
+                      menu1(imagePath: 'asset/amazonfresh1.png', text: 'Fresh'),
+                      menu1(imagePath: 'asset/Mobiles1.png', text: 'Mobiles'),
+                      menu1(imagePath: 'asset/Fashion1.png', text: 'Fashion'),
+                      menu1(imagePath: 'asset/Beauty1.png', text: 'Beauty'),
+                      menu1(imagePath: 'asset/Home1.png', text: 'Home'),
+                      menu1(
+                          imagePath: 'asset/Eletronics1.png',
+                          text: 'Electronics'),
+                      menu1(imagePath: 'asset/Deals1.png', text: 'Deals'),
                     ],
                   ),
                 ),
-                
               ]),
             ),
             SizedBox(
@@ -130,7 +131,6 @@ class _HomeScreenState extends State<HomeScreen> {
                   Color.fromARGB(92, 106, 217, 182),
                   Color.fromARGB(255, 89, 202, 192),
                 ])),
-
                 child: Row(
                   children: [
                     Stack(
@@ -243,16 +243,15 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Column menu1({required String imagePath, String? text}) {
     return Column(
-                      children: [
-                    Image.asset(
-                      imagePath,
-                      width: 70,
-                      height: 70,
-                    ),
-                     Text(text!,
-                        style: const TextStyle(fontWeight: FontWeight.w500))
-                      ],
-                    );
+      children: [
+        Image.asset(
+          imagePath,
+          width: 70,
+          height: 70,
+        ),
+        Text(text!, style: const TextStyle(fontWeight: FontWeight.w500))
+      ],
+    );
   }
 
   Widget buildImage(String imagePath, int index) => Container(
@@ -263,7 +262,4 @@ class _HomeScreenState extends State<HomeScreen> {
           fit: BoxFit.fill,
         ),
       );
-
-         
-      
 }
