@@ -89,7 +89,7 @@ class _Cart_pageState extends State<Cart_page> {
         body: SafeArea(child: Column(
           children: [
             const Expanded(child: TabBarView(children: [
-              cartPage(),buyAgainPage(),Shopping()
+              cartPage(),BuyAgainPage(),Shopping()
             ])
             )
           ],

@@ -321,7 +321,7 @@ class _BuyAgainPageState extends State<BuyAgainPage> {
                                                           BorderRadius.circular(
                                                               50),
                                                     ),
-                                                    child: Column(
+                                                    child: const Column(
                                                       mainAxisAlignment:
                                                           MainAxisAlignment
                                                               .center,
@@ -338,7 +338,7 @@ class _BuyAgainPageState extends State<BuyAgainPage> {
                                                   child: Image.asset(
                                                       'asset/Buy26.jpg'),
                                                 ),
-                                                SizedBox(
+                                                const SizedBox(
                                                   height: 2,
                                                 ),
                                                 Padding(
@@ -349,17 +349,17 @@ class _BuyAgainPageState extends State<BuyAgainPage> {
                                                         CrossAxisAlignment
                                                             .start,
                                                     children: [
-                                                      Text(
+                                                     const Text(
                                                           'The Monk Who Sold His '),
-                                                      Text('Ferrari'),
-                                                      Text('by Robin Sharma'),
-                                                      SizedBox(
+                                                     const Text('Ferrari'),
+                                                     const Text('by Robin Sharma'),
+                                                      const SizedBox(
                                                         height: 2,
                                                       ),
-                                                      SizedBox(
+                                                     const SizedBox(
                                                         height: 2,
                                                       ),
-                                                      Text(
+                                                    const  Text(
                                                         '₹283',
                                                         style: TextStyle(
                                                             fontSize: 18,
@@ -392,7 +392,7 @@ class _BuyAgainPageState extends State<BuyAgainPage> {
                                                             color: Colors
                                                                 .grey[500]),
                                                       ),
-                                                      SizedBox(
+                                                    const  SizedBox(
                                                         height: 10,
                                                       ),
                                                       Padding(
@@ -449,7 +449,7 @@ class _BuyAgainPageState extends State<BuyAgainPage> {
                                       ],
                                     ),
                                   ),
-                                  SizedBox(
+                                const  SizedBox(
                                     height: 1,
                                   ),
                                   Padding(
@@ -480,7 +480,7 @@ class _BuyAgainPageState extends State<BuyAgainPage> {
                                                           BorderRadius.circular(
                                                               50),
                                                     ),
-                                                    child: Column(
+                                                    child: const Column(
                                                       mainAxisAlignment:
                                                           MainAxisAlignment
                                                               .center,
@@ -497,7 +497,7 @@ class _BuyAgainPageState extends State<BuyAgainPage> {
                                                   child: Image.asset(
                                                       'asset/Buy4.png'),
                                                 ),
-                                                SizedBox(
+                                               const SizedBox(
                                                   height: 2,
                                                 ),
                                                 Padding(
@@ -508,13 +508,13 @@ class _BuyAgainPageState extends State<BuyAgainPage> {
                                                         CrossAxisAlignment
                                                             .start,
                                                     children: [
-                                                      Text('CROCODILE'),
-                                                      Text(
+                                                    const  Text('CROCODILE'),
+                                                    const  Text(
                                                           'Slim Fit Flat-Front Trousers'),
-                                                      SizedBox(
+                                                    const  SizedBox(
                                                         height: 2,
                                                       ),
-                                                      SizedBox(
+                                                    const  SizedBox(
                                                         height: 2,
                                                       ),
                                                       Row(
@@ -529,7 +529,7 @@ class _BuyAgainPageState extends State<BuyAgainPage> {
                                                                     FontWeight
                                                                         .bold),
                                                           ),
-                                                          Text(
+                                                         const Text(
                                                             '₹3,624',
                                                             style: TextStyle(
                                                                 fontSize: 18,
@@ -564,7 +564,7 @@ class _BuyAgainPageState extends State<BuyAgainPage> {
                                                             color: Colors
                                                                 .grey[500]),
                                                       ),
-                                                      SizedBox(
+                                                     const SizedBox(
                                                         height: 10,
                                                       ),
                                                       Padding(
@@ -618,7 +618,7 @@ class _BuyAgainPageState extends State<BuyAgainPage> {
                                                 )
                                               ],
                                             )),
-                                        SizedBox(
+                                       const SizedBox(
                                           width: 10,
                                         ),
                                         Container(
@@ -644,7 +644,7 @@ class _BuyAgainPageState extends State<BuyAgainPage> {
                                                           BorderRadius.circular(
                                                               50),
                                                     ),
-                                                    child: Column(
+                                                    child:const Column(
                                                       mainAxisAlignment:
                                                           MainAxisAlignment
                                                               .center,
@@ -661,7 +661,7 @@ class _BuyAgainPageState extends State<BuyAgainPage> {
                                                   child: Image.asset(
                                                       'asset/ree2.png'),
                                                 ),
-                                                SizedBox(
+                                              const  SizedBox(
                                                   height: 15,
                                                 ),
                                                 Padding(
@@ -672,10 +672,10 @@ class _BuyAgainPageState extends State<BuyAgainPage> {
                                                         CrossAxisAlignment
                                                             .start,
                                                     children: [
-                                                      Text('Reebok'),
-                                                      Text(
+                                                     const Text('Reebok'),
+                                                     const Text(
                                                           'Men Energen Lite Running Shoe'),
-                                                      SizedBox(
+                                                     const SizedBox(
                                                         height: 2,
                                                       ),
                                                       Padding(
@@ -725,7 +725,7 @@ class _BuyAgainPageState extends State<BuyAgainPage> {
                                                           ],
                                                         ),
                                                       ),
-                                                      SizedBox(
+                                                     const SizedBox(
                                                         height: 2,
                                                       ),
                                                       Row(
@@ -740,7 +740,7 @@ class _BuyAgainPageState extends State<BuyAgainPage> {
                                                                     FontWeight
                                                                         .bold),
                                                           ),
-                                                          Text(
+                                                     const     Text(
                                                             '₹4,499',
                                                             style: TextStyle(
                                                                 fontSize: 18,
@@ -775,7 +775,7 @@ class _BuyAgainPageState extends State<BuyAgainPage> {
                                                             color: Colors
                                                                 .grey[500]),
                                                       ),
-                                                      SizedBox(
+                                                     const SizedBox(
                                                         height: 10,
                                                       ),
                                                       Padding(
