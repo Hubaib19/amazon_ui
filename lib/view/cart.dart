@@ -1,8 +1,8 @@
 // ignore_for_file: prefer_const_constructors
 
-import 'package:amazon_ui/Screens/buyagain.dart';
-import 'package:amazon_ui/Screens/cart1.dart';
-import 'package:amazon_ui/Screens/shopping.dart';
+import 'package:amazon_ui/view/buyagain.dart';
+import 'package:amazon_ui/view/cart1.dart';
+import 'package:amazon_ui/view/shopping.dart';
 import 'package:flutter/material.dart';
 
 // ignore: camel_case_types

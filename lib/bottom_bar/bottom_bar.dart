@@ -1,9 +1,9 @@
-import 'package:amazon_ui/Screens/account.dart';
-import 'package:amazon_ui/Screens/cart.dart';
-import 'package:amazon_ui/Screens/categories.dart';
-import 'package:amazon_ui/Screens/home.dart';
+import 'package:amazon_ui/view/account.dart';
+import 'package:amazon_ui/view/cart.dart';
+import 'package:amazon_ui/view/categories.dart';
+import 'package:amazon_ui/view/home.dart';
 
-import 'package:amazon_ui/Screens/oders.dart';
+import 'package:amazon_ui/view/oders.dart';
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
